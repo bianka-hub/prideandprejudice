@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos.css" />
+    <title>pagina prueba</title>
+</head>
+<body>
+  <header>
+    <h1>Mi Sitio Web</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+		
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <article>
+       <form>
+  <input type="text" placeholder="Texto"><br>
+  <input type="email" placeholder="Email"><br>
+  <input type="password" placeholder="Contraseña"><br>
+  <input type="number" placeholder="Número"><br>
+  <input type="date"><br>
+  <input type="checkbox"> Acepto los términos<br>
+  <input type="radio" name="opcion"> Opción 1
+  <input type="radio" name="opcion"> Opción 2<br>
+  <input type="submit" value="Enviar">
+</form>
+      </figure>
+    </article>
+
+    <form>
+  <label for="nombre">Nombre (requerido, mínimo 2 caracteres):</label>
+  <input type="text" id="nombre" name="nombre" required minlength="2"><br><br>
+  <label for="edad">Edad (entre 18 y 100):</label>
+  <input type="number" id="edad" name="edad" min="18" max="100"><br><br>
+  <input type="submit" value="Enviar">
+</form>
+<form action="https://formspree.io/f/https://formspree.io/f/mdkdloqv" method="POST">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" required><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <label for="mensaje">Mensaje:</label><br>
+  <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+  <input type="submit" value="Enviar">
+</form>
+    <aside>
+      <h3>Información Relacionada</h3>
+      <p>Contenido adicional...</p>
+    </aside>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Mi Sitio Web</p>
+  </footer>
+</body>
+</html>
