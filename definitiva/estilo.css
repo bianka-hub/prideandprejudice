@@ -1,0 +1,171 @@
+/* --- HEADER --- */
+header {
+  text-align: center;
+  background-color: #9e4f13;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+  border-radius: 50px;
+  
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+/* --- NAV --- */
+nav {
+  background-color: #bf8c34;
+  padding: 10px 0;
+   border-radius: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li:hover {
+  background-color: #823e0a;
+   border-radius: 50px;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  flex-direction: column;
+}
+
+nav ul li:hover > ul {
+  display: flex;
+}
+
+nav ul ul li {
+  width: 200px;
+}
+
+/* --- BODY --- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+/* --- MAIN --- */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+/* --- FORMULARIO --- */
+form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+  background-color: white;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+h2 {
+  color: #d6b760;
+  font-size: 35px;
+}
+
+label {
+  color: #283629;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #283629;
+  color: #283629;
+  outline: none;
+}
+
+/* --- BOTÓN --- */
+.btn {
+  background-color:#cca049;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color:#4c691e;
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #c98026;
+  color:#5c3506;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 480px) {
+  form {
+    width: 90%;
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
