@@ -136,3 +136,63 @@ img:hover {
  .contenedor{
 	 display: flex;
  }
+ /* --- Ajuste responsive general --- */
+@media (max-width: 600px) {
+  header {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  header h1 {
+    font-size: 28px;
+    padding: 15px;
+  }
+
+  header ul {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  /* Hace que las imágenes y textos se adapten */
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imagen {
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  p, h2, h3 {
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+/* --- Ajuste para tablets --- */
+@media (min-width: 601px) and (max-width: 1024px) {
+  header {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 34px;
+  }
+
+  .contenedor {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .imagen {
+    width: 250px;
+    height: 250px;
+  }
+}
